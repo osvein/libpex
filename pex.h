@@ -173,6 +173,6 @@ typedef struct Pex {
 	Pex_object	*objectv;
 } Pex;
 
-int pex_read(Pex *, FILE *);
-int pex_write(Pex *, FILE *);
+int pex_read(Pex *, size_t nitems, FILE *);
+int pex_write(Pex *, size_t nitems, FILE *);
 int pex_free(Pex *); /* does not free the root Pex object */
