@@ -25,6 +25,9 @@
  * #include <stdio.h>
  */
 
+#define PEX_GAME_TESV	0x0001
+#define PEX_GAME_FO4	0x0002
+
 typedef struct Pex_string {
 	uint16_t len;
 	char	*c; /* null-terminated */
